@@ -26,7 +26,7 @@ How an organization makes decisions, based on the lessons of Time and Change and
 
 Resumo 2: O trecho aborda as ferramentas necessárias para manter um código na engenharia de software, além de refletir sobre as maneiras de como um programador pode manter o código sustentável e valioso durante o tempo. Além de citar três princípios fundamentais que as organizações de software devem ter em mente ao projetar, arquitetar e escrever seu código, como Tempo e Mudança, Escala e crescimento, e Compensações e custos.
 
-Exemplos de trade-off: Simplicidade de uma estrutura x Escabilidade:
+Exemplos de trade-off: Simplicidade x Escabilidade:
 Uma estrutura de software simples pode gerar menos gastos por ser mais simples de ser controlada e mantida, entretanto, com a escabilidade, essa estrutura se torna mais complexa.
 
 Custo de desenvolvimento x Funcionalidade:
