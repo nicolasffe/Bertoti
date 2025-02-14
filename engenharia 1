@@ -6,7 +6,7 @@ The terms “programming” and “software engineering” have been used interc
  
 Unlike those more established engineering professions, current software engineering theory or practice is not nearly as rigorous. Aeronautical engineers must follow rigid guidelines and practices, because errors in their calculations can cause real damage; programming, on the whole, has traditionally not followed such rigorous practices. But, as software becomes more integrated into our lives, we must adopt and rely on more rigorous engineering methods. We hope this book helps others see a path toward more reliable software practices
 
-Resumo 1: o termo Engenharia de Software traz mais seriedade pois é possivel pensar sobre outras engenharias que são essencias para o mundo e que trazem dados e deretrizes rigorosas, visto que, qualqueis erros podem trazer danos reias. Embora ao princípio um erro na engenahria de software pode não trazer esses danos reais, ao se desenvolver como necessária no dias atuais, esses erros também são levados em conta.
+Resumo 1: o trecho aborda algumas diferenças entre como são chamadas a ciência da computação e a engenharia de software. O termo Engenharia de Software traz mais seriedade pois é possivel pensar sobre outras engenharias que são essencias para o mundo e que trazem dados e deretrizes rigorosas, visto que, qualqueis erros podem trazer danos reias. Embora ao princípio um erro na engenahria de software pode não trazer esses danos reais, ao se desenvolver como necessária no dias atuais, esses erros também são levados em conta.
 
 Programming Over Time
 We propose that “software engineering” encompasses not just the act of writing code, but all of the tools and processes an organization uses to build and maintain that code over time. What practices can a software organization introduce that will best keep its code valuable over the long term? How can engineers make a codebase more sustainable and the software engineering discipline itself more rigorous? We don’t have fundamental answers to these questions, but we hope that Google’s collective experience over the past two decades illuminates possible paths toward finding those answers.
@@ -23,3 +23,11 @@ How an organization will need to adapt as it evolves
  
 Trade-offs and Costs
 How an organization makes decisions, based on the lessons of Time and Change and Scale and Growth
+
+Resumo 2: O trecho aborda as ferramentas necessárias para manter um código na engenharia de software, além de refletir sobre as maneiras de como um programador pode manter o código sustentável e valioso durante o tempo. Além de citar três princípios fundamentais que as organizações de software devem ter em mente ao projetar, arquitetar e escrever seu código, como Tempo e Mudança, Escala e crescimento, e Compensações e custos.
+
+Exemplos de trade-off: Simplicidade de uma estrutura x Escabilidade:
+Uma estrutura de software simples pode gerar menos gastos por ser mais simples de ser controlada e mantida, entretanto, com a escabilidade, essa estrutura se torna mais complexa.
+
+Custo de desenvolvimento x Funcionalidade:
+um simples código pode ser mais fácil de ser mantido mas menos funcional, entretanto, ao adicionar funcionalidades ao código, o tempo de desenvolvimento e os custos aumentam.
