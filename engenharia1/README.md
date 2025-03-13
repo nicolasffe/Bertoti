@@ -40,4 +40,7 @@ Um código simples pode ser mais fácil de manter, mas pode oferecer funcionalid
 # Segurança x Usabilidade:
 Sistemas altamente seguros geralmente exigem autenticações rigorosas, múltiplos fatores de verificação e restrições de acesso, o que pode dificultar a experiência do usuário. Por outro lado, tornar um sistema mais fácil de usar, reduzindo etapas de autenticação, pode comprometer sua segurança.
 
+#Resumo do slide 57
+Na entrega de um produto ou código, o essencial é a funcionalidade. Uma versão simples, mas útil, facilita a validação, aprimoramentos e evolução contínua.
+
 
