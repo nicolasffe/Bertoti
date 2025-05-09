@@ -43,4 +43,90 @@ Sistemas altamente seguros geralmente exigem autenticações rigorosas, múltipl
 # Resumo do slide 57
 Na entrega de um produto ou código, o essencial é a funcionalidade. Uma versão simples, mas útil, facilita a validação, aprimoramentos e evolução contínua.
 
+#Atividade 5 - AGENDA
+#TesteAgenda.java
+package agenda;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+public class TesteAgenda {
+
+    @Test
+    void testAdicionarEListarContatos() {
+        Agenda agenda = new Agenda();
+        agenda.adicionarContato(new Contato("Ana", "1234-5678"));
+        agenda.adicionarContato(new Contato("João", "9876-5432"));
+
+        assertEquals(2, agenda.getContatos().size());
+    }
+
+    @Test
+    void testBuscarContatoPorNome() {
+        Agenda agenda = new Agenda();
+        agenda.adicionarContato(new Contato("Carlos", "1111-2222"));
+
+        Contato contato = agenda.buscarPorNome("Carlos");
+        assertNotNull(contato);
+        assertEquals("1111-2222", contato.getTelefone());
+    }
+
+    @Test
+    void testBuscarContatoInexistente() {
+        Agenda agenda = new Agenda();
+        agenda.adicionarContato(new Contato("Lucas", "5555-6666"));
+
+        Contato contato = agenda.buscarPorNome("Maria");
+        assertNull(contato);
+    }
+}
+
+#Agenda.java
+package agenda;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Agenda {
+    private List<Contato> contatos = new ArrayList<>();
+
+    public void adicionarContato(Contato contato) {
+        contatos.add(contato);
+    }
+
+    public Contato buscarPorNome(String nome) {
+        for (Contato contato : contatos) {
+            if (contato.getNome().equalsIgnoreCase(nome)) {
+                return contato;
+            }
+        }
+        return null;
+    }
+
+    public List<Contato> getContatos() {
+        return contatos;
+    }
+}
+
+#Contato.java
+package agenda;
+
+public class Contato {
+    private String nome;
+    private String telefone;
+
+    public Contato(String nome, String telefone) {
+        this.nome = nome;
+        this.telefone = telefone;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+}
+
 
